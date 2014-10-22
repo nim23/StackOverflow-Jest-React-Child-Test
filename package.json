@@ -1,0 +1,20 @@
+{
+  "name": "test-child-component",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest-cli": "~0.1.18",
+    "react": "~0.11.2",
+    "react-tools": "~0.11.2"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": ["<rootDir>/node_modules/react"]
+  }
+}
